@@ -34,3 +34,7 @@ function get_browser() {
        } else {
          console.log('hello');
          }
+
+
+// localStorage.setItem('AnnouncementOnce','true');
+}
