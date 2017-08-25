@@ -1,5 +1,7 @@
 var full = "no";
 
+findVersion(browser.version);
+
 function findVersion(versionNum){
   if(full != 'yes' && versionNum == "9") {
       sessionStorage.setItem('tester', 'yes');
@@ -42,9 +44,3 @@ function get_browser() {
  // localStorage.setItem('tester', null);
 
  console.log("2 " + full);
-
-
-
-
-// findVersion(browser.version);
-console.log("3 " + full);
