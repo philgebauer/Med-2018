@@ -43,3 +43,5 @@ function findVersion(versionNum){
 
 return full = sessionStorage.setItem('tester','true');
 }
+
+console.log("one" + one);
