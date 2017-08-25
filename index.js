@@ -20,13 +20,13 @@ function get_browser() {
 
  console.log(browser.version);
  var full = localStorage.getItem('tester')
- localStorage.setItem('tester', null);
+ // localStorage.setItem('tester', null);
  
  console.log("var full is " + full);
 
 
    function findVersion(versionNum){
-     if(full === null || versionNum == "9") {
+     if(full === null && versionNum == "9") {
          alert("You’re using Internet Explorer " + versionNum + ", which is an outdated web browser. That means things on this site won’t look right. And after January 1, 2018, things won’t display at all. The best way to fix the problem is to update your browser with the current version.");
          localStorage.setItem('tester','true');
        } else if (typeof(Storage) !== "undefined" && versionNum == "10") {
