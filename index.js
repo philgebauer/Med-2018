@@ -20,7 +20,7 @@ function get_browser() {
 
  console.log(browser.version);
  var full = localStorage.getItem('AnnouncementOnce')
- console.log("AnnouncementOnce, " + localStorage.getItem('AnnouncementOnce'));
+ console.log("AnnouncementOnceeeeee, " + localStorage.getItem('AnnouncementOnce'));
 
 
    function findVersion(versionNum){
@@ -34,7 +34,7 @@ function get_browser() {
          }
 
 
-localStorage.setItem('AnnouncementOnce','true');
+// localStorage.setItem('AnnouncementOnce','true');
 }
 
 findVersion(browser.version);
