@@ -1,3 +1,4 @@
+//  findVersion(browser.version);
 var full;
 
 function get_browser() {
@@ -9,7 +10,7 @@ function get_browser() {
     if(M[1]==='Chrome'){
         tem=ua.match(/\bOPR|Edge\/(\d+)/)
         if(tem!=null)   {return {name:'Opera', version:tem[1]};}
-        }
+        } 
     M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
     if((tem=ua.match(/version\/(\d+)/i))!=null) {M.splice(1,1,tem[1]);}
     return {
@@ -28,7 +29,7 @@ function get_browser() {
 
 
    function findVersion(versionNum){
-     if(full != true && versionNum == "9") {
+     if(full != 'yes' && versionNum == "9") {
          sessionStorage.setItem('tester', 'yes');
          full = sessionStorage.getItem('tester')
          console.log("var full is " + full);
@@ -38,10 +39,10 @@ function get_browser() {
        } else {
          console.log('hello');
          }
- return full = sessionStorage.getItem('tester');
+ // return full = sessionStorage.getItem('tester');
 
 
-// sessionStorage.setItem('tester','true');
+return full = sessionStorage.setItem('tester','true');
 }
 
 // findVersion(browser.version);
