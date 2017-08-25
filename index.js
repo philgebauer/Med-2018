@@ -20,7 +20,7 @@ function get_browser() {
 
  console.log(browser.version);
  var full = localStorage.getItem('AnnouncementOnce')
- console.log(full);
+ console.log("var full is, " + full);
 
 
    function findVersion(versionNum){
