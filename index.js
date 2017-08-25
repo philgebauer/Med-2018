@@ -39,7 +39,7 @@ function get_browser() {
        } else {
          console.log('hello');
          }
-return full = sessionStorage.getItem('tester');
+// return full = sessionStorage.getItem('tester');
 
 
 // localStorage.setItem('AnnouncementOnce','true');
