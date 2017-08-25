@@ -19,14 +19,14 @@ function get_browser() {
  var browser = get_browser();
 
  console.log(browser.version);
- var full = localStorage.getItem('AnnouncementOnce')
- console.log("AnnouncementOnceeeeee, " + localStorage.getItem('AnnouncementOnce'));
+ var full = localStorage.getItem('tester')
+ console.log("AnnouncementOnceeeeee, " + full);
 
 
    function findVersion(versionNum){
      if(full == null && versionNum == "9") {
          alert("You’re using Internet Explorer " + versionNum + ", which is an outdated web browser. That means things on this site won’t look right. And after January 1, 2018, things won’t display at all. The best way to fix the problem is to update your browser with the current version.");
-         localStorage.setItem('AnnouncementOnce','true');
+         localStorage.setItem('tester','true');
        } else if (typeof(Storage) !== "undefined" && versionNum == "10") {
          alert("We’ve noticed you’re using Internet Explorer " + versionNum + ", an outdated web browser. That means things on our site won’t look right. And after January 1, 2018, things won’t display at all.\n\nWhat’s the fix? Get the current version of Internet Explorer or Chrome.");
        } else {
