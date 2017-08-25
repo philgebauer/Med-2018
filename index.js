@@ -1,4 +1,5 @@
 var full = "no";
+var one = "one"
 
 findVersion(browser.version);
 
@@ -7,6 +8,8 @@ function findVersion(versionNum){
       sessionStorage.setItem('tester', 'yes');
       full = sessionStorage.getItem('tester')
       console.log("1 " + full);
+      one = "two";
+      console.log(one);
       alert("You’re using Internet Explorer " + versionNum + ", which is an outdated web browser. That means things on this site won’t look right. And after January 1, 2018, things won’t display at all. The best way to fix the problem is to update your browser with the current version.");
     } else if (typeof(Storage) !== "undefined" && versionNum == "10") {
       alert("We’ve noticed you’re using Internet Explorer " + versionNum + ", an outdated web browser. That means things on our site won’t look right. And after January 1, 2018, things won’t display at all.\n\nWhat’s the fix? Get the current version of Internet Explorer or Chrome.");
