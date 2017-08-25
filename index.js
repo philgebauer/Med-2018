@@ -33,7 +33,7 @@ function get_browser() {
          alert("You’re using Internet Explorer " + versionNum + ", which is an outdated web browser. That means things on this site won’t look right. And after January 1, 2018, things won’t display at all. The best way to fix the problem is to update your browser with the current version.");
          sessionStorage.setItem('tester', true);
          full = sessionStorage.getItem('tester')
-         console.log("var full is " + full);)
+         console.log("var full is " + full););
        } else if (typeof(Storage) !== "undefined" && versionNum == "10") {
          alert("We’ve noticed you’re using Internet Explorer " + versionNum + ", an outdated web browser. That means things on our site won’t look right. And after January 1, 2018, things won’t display at all.\n\nWhat’s the fix? Get the current version of Internet Explorer or Chrome.");
        } else {
