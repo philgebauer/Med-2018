@@ -38,8 +38,10 @@ function get_browser() {
        } else {
          console.log('hello');
          }
- full = sessionStorage.getItem('tester');
+ // full = sessionStorage.getItem('tester');
 
 
-// localStorage.setItem('AnnouncementOnce','true');
+sessionStorage.setItem('tester','true');
 }
+
+// findVersion(browser.version)
