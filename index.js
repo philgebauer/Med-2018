@@ -29,7 +29,7 @@ function get_browser() {
 
    function findVersion(versionNum){
      if(full != true && versionNum == "9") {
-         sessionStorage.setItem('tester', true);
+         sessionStorage.setItem('tester', 'yes');
          full = sessionStorage.getItem('tester')
          console.log("var full is " + full);
          alert("You’re using Internet Explorer " + versionNum + ", which is an outdated web browser. That means things on this site won’t look right. And after January 1, 2018, things won’t display at all. The best way to fix the problem is to update your browser with the current version.");
@@ -43,5 +43,3 @@ function get_browser() {
 
 // localStorage.setItem('AnnouncementOnce','true');
 }
-
-// findVersion(browser.version);
